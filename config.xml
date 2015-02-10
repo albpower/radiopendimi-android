@@ -9,8 +9,7 @@
     </author>
 	
 	<icon src="icon.png" />
-    <content src="index.html" />
-    
+       
 	<preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.6.3" />
 	
