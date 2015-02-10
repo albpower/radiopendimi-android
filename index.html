@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,
+        height=device-height, target-densitydpi=device-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<title>Radio Pendimi - online streaming</title>
+<link rel="apple-touch-icon" href="images/AppIcon.png" />
+    
+    <!-- CSS LIDHJET -->
+<link rel="stylesheet" href="css/new_template.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0-rc.1.min.css" />
+<link rel="stylesheet" href="css/stili.css"/>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>    
+    
+    <!-- JS LIDHJET  -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.min.js"></script>
+<script src="js/myscript.js"></script>
+<script type="text/javascript" src="phonegap.js"></script>
+</head>
+
+<body onload="init();">
+
+ <!-- Kanali 1 - homepage -->
+<div data-role="page" id="home" data-theme="b"  >
+<!-- Header -->
+<div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
+<a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Radio Pendimi 24h Live </h1>
+<a href="#dergomesazh" data-role="button" data-inline="true" data-mini="true" data-icon="mail" data-iconpos="notext"></a>
+</div>
+<!-- content -->
+<div data-role="none">
+    <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
+    <!-- AUDIO PLAYER -->
+    <p style="text-align:center; display:block">
+        <span>Kanali 1 - Jeni duke ndëgjuar:</span> <br/>  
+        <span><iframe src="http://radio-pendimi.com/kanal-1-status.php" style="border:none; height:60px; width:100%"></iframe>
+    </p>
+<audio src="http://radio-pendimi.com:8000/;$type=mp3" id="player" autoplay></audio>
+<div style="text-align:center; margin-bottom: 10px"> <!-- Player controls start -->
+    <span onclick="document.getElementById('player').play()" class="btn_control"> PLAY</span>
+    <span onclick="document.getElementById('player').pause()" class="btn_control"> STOP</span>
+    <span onclick="document.getElementById('player').muted=!document.getElementById('player').muted" class="btn_control"> MUTE/UNMUTE</span>
+    </div> <!-- Player controls end -->
+     <!-- Rubrikat kontaktuese -->
+    <div style="text-align:center;padding-top:5px">
+        <p><a href="skype:radiopendimi?call" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-skype fa-lg"></i>  Thirr në Skype</span></a></p>
+        <p><a href="tel:0041445869903" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-phone fa-lg"></i>  Thirr në telefon</span></a></p>
+        <p><a href="#dergomesazh" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-comments-o fa-lg"></i>  Dërgo Mesazh</span></a></p>
+    </div>
+</div>
+<!-- footer -->
+<div data-role="footer" data-position="fixed" data-id="ap_footer">
+<!-- footer navbar -->
+    <div data-role="navbar" style="border-bottom:6px solid #2f4c73">
+    	<ul>
+			<li><a href="#home" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 1</a></li>
+            <li><a href="#kanali-2" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 2</a></li>
+            <li><a href="#fb-wall" data-icon="bullets" data-iconpos="top" data-transition="none">Lajme</a></li>
+            <li><a href="#info" data-icon="info" data-iconpos="top" data-transition="none">Info</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- End Page -->
+
+<!-- Informacione -->
+<div data-role="page" id="info" data-theme="b" >
+<!-- Header -->
+<div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
+<a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Info </h1>
+</div>
+<!-- content -->
+<div data-role="none">
+ <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;">
+    <p align="center">
+      <a href="mailto:info@radio-pendimi.com" style="text-decoration:none; text-shadow:none; color: #333;font-weight: 500;font-size: 20px; font-family: Dosis;">info@radio-pendimi.com </a><br>
+      <a href="http://radio-pendimi.com" style="text-decoration: none; text-shadow:none; color: #333; font-weight: 500; font-size: 20px; font-family: Dosis;">http://radio-pendimi.com </a><br>
+        <span style="text-decoration: none; text-shadow:none; color: #333; font-weight: 500; font-size: 15px; font-family: Dosis;">Programuar & Dizajnuar nga Afrim Azizi</span> <br>
+      <a href="https://www.facebook.com/radioopendimi" target="_blank"><img src="images/find-us-on-facebook.png" style="width: 170px; padding: 5px;"/></a>
+  </p> 
+  </div>
+<!-- footer -->
+<div data-role="footer" data-position="fixed" data-id="ap_footer">
+<!-- footer navbar -->
+    <div data-role="navbar" style="border-bottom:6px solid #2f4c73">
+    	<ul>
+			<li><a href="#home" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 1</a></li>
+            <li><a href="#kanali-2" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 2</a></li>
+            <li><a href="#fb-wall" data-icon="bullets" data-iconpos="top" data-transition="none">Lajme</a></li>
+            <li><a href="#info" data-icon="info" data-iconpos="top" data-transition="none">Info</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- End Page -->
+    
+
+<!-- Kanali 2 -->
+<div data-role="page" id="kanali-2" data-theme="b">
+<!-- Header -->
+<div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
+<a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Kanali - 2 </h1>
+</div>
+<!-- content -->
+<div data-role="none">
+     <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
+<audio src="http://radio-pendimi.com:8002/;$type=mp3" id="player-2"></audio>
+<div style="text-align:center">
+    <span onclick="document.getElementById('player-2').play()" class="btn_control"> PLAY</span>
+    <span onclick="document.getElementById('player-2').pause()" class="btn_control"> STOP</span>
+    <span onclick="document.getElementById('player-2').muted=!document.getElementById('player-2').muted" class="btn_control"> MUTE/UNMUTE</span>
+</div>
+<p style="text-align:center; display:block">
+        <span>Kanali 2 - Jeni duke ndëgjuar:</span> <br/>  
+        <span><iframe src="http://radio-pendimi.com/kanal-2-status.php" style="border:none; height:60px; width:100%"></iframe>
+    </p>
+</div>
+<!-- footer -->
+<div data-role="footer" data-position="fixed" data-id="ap_footer">
+<!-- footer navbar -->
+    <div data-role="navbar" style="border-bottom:6px solid #2f4c73">
+    	<ul>
+			<li><a href="#home" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 1</a></li>
+            <li><a href="#kanali-2" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 2</a></li>
+            <li><a href="#fb-wall" data-icon="bullets" data-iconpos="top" data-transition="none">Lajme</a></li>
+            <li><a href="#info" data-icon="info" data-iconpos="top" data-transition="none">Info</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- End Page -->
+
+
+<!-- Dergo Mesazh -->
+<div data-role="page" id="dergomesazh" data-theme="b">
+<!-- Header -->
+<div data-role="header" data-position="fixed" style="background-color:#fafafc;border-top:6px solid #2f4c73">
+        <h1 style="color:#444;text-shadow:none">Dërgo Mesazh</h1>
+	<a href="#home"  data-role="button" data-inline="true" data-mini="true" data-icon="home" data-iconpos="notext" data-transition="none"></a>
+</div>
+    
+<!-- content -->
+<div data-role="content">
+    <form class="form" id="callAjaxForm">
+	<p class="name">
+        <input name="emri" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Emri" id="name" data-role="none"  />
+      </p>
+     
+      <p class="text">
+        <textarea name="comment" class="validate[required,length[6,30]] feedback-input" id="comment" placeholder="Mesazhi" data-role="none" ></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <button id="submit" type="submit" >DËRGO</button>
+		<button id="reset" type="reset" >PASTRO FUSHAT</button>
+	  </div>
+	   <h3 id="notification" align="center" style="font-color:green;"></h3>
+    </form>
+</div>
+<!-- footer -->
+
+</div>
+<!-- End Page -->
+
+<!-- Facebook wall -->
+<div data-role="page" id="fb-wall" data-theme="b" >
+<!-- Header -->
+<div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
+<a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Info </h1>
+</div>
+<!-- content -->
+<div data-role="none">
+<div id="ibacor_fb_content">
+<!-- Your facebook streaming -->
+<div class="ibacor_fb_streaming"></div>
+</div>
+</div><!-- content -->
+<!-- footer -->
+<div data-role="footer" data-position="fixed" data-id="ap_footer">
+<!-- footer navbar -->
+    <div data-role="navbar" style="border-bottom:6px solid #2f4c73">
+    	<ul>
+			<li><a href="#home" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 1</a></li>
+            <li><a href="#kanali-2" data-icon="audio" data-iconpos="top" data-transition="none">Kanali 2</a></li>
+            <li><a href="#fb-wall" data-icon="bullets" data-iconpos="top" data-transition="none">Lajme</a></li>
+            <li><a href="#info" data-icon="info" data-iconpos="top" data-transition="none">Info</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- End Page -->
+    <script src="js/jquery.ibacor-fb-streaming.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

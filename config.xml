@@ -1,0 +1,14 @@
+<?xml version='1.0.0' encoding='utf-8'?>
+<widget id="com.albpower.radiopendimii" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Radio Pendimi</name>
+    <description>
+        Radio Pendimi - radio islame ne gjuhen shqipe
+    </description>
+    <author email="info@radio-pendimi.com" href="http://radio-pendimi.com">
+        Afrim Azizi
+    </author>
+	<icon src="icon.png" />
+    <content src="index.html" />
+    <access origin="*" />
+	<access origin="*.pushwoosh.com" />
+</widget>
