@@ -7,8 +7,13 @@
     <author email="info@radio-pendimi.com" href="http://radio-pendimi.com">
         Afrim Azizi
     </author>
+	
 	<icon src="icon.png" />
     <content src="index.html" />
-    <access origin="*" />
+    
+	<preference name="permissions" value="none" />
+    <preference name="phonegap-version" value="3.6.3" />
+	
+	<access origin="*" />
 	<access origin="*.pushwoosh.com" />
 </widget>
