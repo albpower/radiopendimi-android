@@ -21,10 +21,9 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.0-rc.1.min.js"></script>
 <script src="js/myscript.js"></script>
-<script type="text/javascript" src="phonegap.js"></script>
 </head>
 
-<body onload="init();">
+<body>
 
  <!-- Kanali 1 - homepage -->
 <div data-role="page" id="home" data-theme="b"  >
@@ -83,8 +82,8 @@
       <a href="http://radio-pendimi.com" style="text-decoration: none; text-shadow:none; color: #333; font-weight: 500; font-size: 20px; font-family: Dosis;">http://radio-pendimi.com </a><br>
         <span style="text-decoration: none; text-shadow:none; color: #333; font-weight: 500; font-size: 15px; font-family: Dosis;">Programuar & Dizajnuar nga Afrim Azizi</span> <br>
       <a href="https://www.facebook.com/radioopendimi" target="_blank"><img src="images/find-us-on-facebook.png" style="width: 170px; padding: 5px;"/></a>
-  </p> 
-  </div>
+  </p>
+</div>
 <!-- footer -->
 <div data-role="footer" data-position="fixed" data-id="ap_footer">
 <!-- footer navbar -->
@@ -198,5 +197,10 @@
 <!-- End Page -->
     <script src="js/jquery.ibacor-fb-streaming.min.js"></script>
     <script src="js/index.js"></script>
+	<script type="text/javascript" src="js/PushwooshAndroid.js"></script>
+    <script type="text/javascript" src="js/pushwoosh-start.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
