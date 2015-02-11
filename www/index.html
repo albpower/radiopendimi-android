@@ -40,7 +40,7 @@
         <span>Kanali 1 - Jeni duke ndëgjuar:</span> <br/>  
         <span><iframe src="http://radio-pendimi.com/kanal-1-status.php" style="border:none; height:60px; width:100%"></iframe>
     </p>
-<audio src="http://radio-pendimi.com:8000/;$type=mp3" id="player" autoplay></audio>
+<audio src="http://radio-pendimi.com:8000/;$type=mp3" id="player"></audio>
 <div style="text-align:center; margin-bottom: 10px"> <!-- Player controls start -->
     <span onclick="document.getElementById('player').play()" class="btn_control"> PLAY</span>
     <span onclick="document.getElementById('player').pause()" class="btn_control"> STOP</span>
@@ -195,12 +195,14 @@
 </div>
 </div>
 <!-- End Page -->
-    <script src="js/jquery.ibacor-fb-streaming.min.js"></script>
-    <script src="js/index.js"></script>
-	<script type="text/javascript" src="js/PushwooshAndroid.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/PushwooshAndroid.js"></script>
     <script type="text/javascript" src="js/pushwoosh-start.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
+    <!-- <script src="js/jquery.ibacor-fb-streaming.min.js"></script>-->
+    <!-- <script src="js/index.js"></script>-->
+    
 </body>
 </html>
