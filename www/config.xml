@@ -1,6 +1,3 @@
-<?xml version='1.0.0' encoding='utf-8'?>
-<widget id="com.albpower.radiopendimii" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
@@ -9,7 +6,7 @@
         id        = "com.albpower.radiopendimii"
         version   = "2.0.1">
 
-    <name>Radio Pendimii</name>
+    <name>Radio Pendimi</name>
     <description>
         Radio Pendimi - radio islame ne gjuhen shqipe
     </description>
