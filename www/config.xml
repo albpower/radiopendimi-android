@@ -5,7 +5,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.albpower.radiopendimii"
         versionCode = "20600"
-        version   = "2.5.0">
+        version   = "2.6.0">
 
     <name>Radio Pendimi</name>
     <description>
