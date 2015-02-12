@@ -27,32 +27,33 @@
 
  <!-- Kanali 1 - homepage -->
 <div data-role="page" id="home" data-theme="b"  >
-<!-- Header -->
+<!-- Header 
 <div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
 <a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Radio Pendimi 24h Live </h1>
 <a href="#dergomesazh" data-role="button" data-inline="true" data-mini="true" data-icon="mail" data-iconpos="notext"></a>
 </div>
+-->
 <!-- content -->
 <div data-role="none" class="app">
-    <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
+    <img src="images/pendimi-logo.png" style="width: 50%; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
     <!-- AUDIO PLAYER -->
     <p style="text-align:center; display:block">
         <span>Kanali 1 - Jeni duke ndëgjuar:</span> <br/>  
         <span><iframe src="http://radio-pendimi.com/kanal-1-status.php" style="border:none; height:30px; width:100%"></iframe>
     </p>
 <audio src="http://radio-pendimi.com:8000/;$type=mp3" id="player"></audio>
-<div style="text-align:center; margin-bottom: 10px"> <!-- Player controls start -->
-    <span onclick="document.getElementById('player').play()" class="btn_control"> PLAY</span>
+<div style="text-align:center; width: 100%; display: flex;"> <!-- Player controls start -->
+    <span onclick="document.getElementById('player').play()" class="btn_control" style="margin-left:15px;"> PLAY</span>
     <span onclick="document.getElementById('player').pause()" class="btn_control"> STOP</span>
-    <span onclick="document.getElementById('player').muted=!document.getElementById('player').muted" class="btn_control"> MUTE/UNMUTE</span>
+    <span onclick="document.getElementById('player').muted=!document.getElementById('player').muted" class="btn_control" style="margin-right:15px;"> MUTE/UNMUTE</span>
     </div> <!-- Player controls end -->
 	
      <!-- Rubrikat kontaktuese -->
     <div style="text-align:center;padding-top:5px">
-        <p><a href="skype:radiopendimi?call" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-skype fa-lg"></i>  Thirr në Skype</span></a></p>
-        <p><a href="tel:0041445869903" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-phone fa-lg"></i>  Thirr në telefon</span></a></p>
-        <p><a href="#dergomesazh" data-role="none" style="text-decoration:none"><span class="btn_control"><i class="fa fa-comments-o fa-lg"></i>  Dërgo Mesazh</span></a></p>
-    </div>
+		<p><a href="skype:radiopendimi?call" data-role="none" style="text-decoration:none"><span class="btn_contact"><i class="fa fa-skype fa-lg"></i>  Thirr në Skype</span></a></p>
+        <p><a href="tel:0041445869903" data-role="none" style="text-decoration:none"><span class="btn_contact"><i class="fa fa-phone fa-lg"></i>  Thirr në telefon</span></a> </p>
+        <p><a href="#dergomesazh" data-role="none" style="text-decoration:none"><span class="btn_contact"><i class="fa fa-comments-o fa-lg"></i>  Dërgo Mesazh</span></a> </p> 
+	</div>
 </div>
 <!-- footer -->
 <div data-role="footer" data-position="fixed" data-id="ap_footer">
@@ -71,13 +72,15 @@
 
 <!-- Informacione -->
 <div data-role="page" id="info" data-theme="b" >
-<!-- Header -->
+<!-- Header 
 <div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
 <a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Info </h1>
 </div>
+-->
+
 <!-- content -->
 <div data-role="none">
- <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;">
+ <img src="images/pendimi-logo.png" style="width: 50%; margin-right:auto; margin-left:auto; display: block; padding-top: 30px;">
     <p align="center">
       <a href="mailto:info@radio-pendimi.com" style="text-decoration:none; text-shadow:none; color: #333;font-weight: 500;font-size: 20px; font-family: Dosis;">info@radio-pendimi.com </a><br>
       <a href="http://radio-pendimi.com" style="text-decoration: none; text-shadow:none; color: #333; font-weight: 500; font-size: 20px; font-family: Dosis;">http://radio-pendimi.com </a><br>
@@ -103,18 +106,20 @@
 
 <!-- Kanali 2 -->
 <div data-role="page" id="kanali-2" data-theme="b">
-<!-- Header -->
+<!-- Header 
 <div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
 <a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Kanali - 2 </h1>
 </div>
+-->
+
 <!-- content -->
 <div data-role="none">
-     <img src="images/pendimi-logo.png" style="width: 210px; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
+     <img src="images/pendimi-logo.png" style="width: 50%; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
 <audio src="http://radio-pendimi.com:8002/;$type=mp3" id="player-2"></audio>
-<div style="text-align:center">
-    <span onclick="document.getElementById('player-2').play()" class="btn_control"> PLAY</span>
+<div style="text-align:center; width: 100%; display: flex;">
+    <span onclick="document.getElementById('player-2').play()" class="btn_control" style="margin-left:15px"> PLAY</span>
     <span onclick="document.getElementById('player-2').pause()" class="btn_control"> STOP</span>
-    <span onclick="document.getElementById('player-2').muted=!document.getElementById('player-2').muted" class="btn_control"> MUTE/UNMUTE</span>
+    <span onclick="document.getElementById('player-2').muted=!document.getElementById('player-2').muted" class="btn_control" style="margin-right:15px"> MUTE/UNMUTE</span>
 </div>
 <p style="text-align:center; display:block">
         <span>Kanali 2 - Jeni duke ndëgjuar:</span> <br/>  
@@ -171,10 +176,12 @@
 
 <!-- Facebook wall -->
 <div data-role="page" id="fb-wall" data-theme="b" >
-<!-- Header -->
+<!-- Header 
 <div data-role="header" data-id="ap_header" style="background-color:#fafafc;border-top:6px solid #2f4c73">
 <a href="index.html" data-icon="home" data-iconpos="notext"></a><h1 style="color:#444;text-shadow: none;font-family: Dosis;"> Info </h1>
 </div>
+-->
+
 <!-- content -->
 <div data-role="none">
 <div id="ibacor_fb_content">

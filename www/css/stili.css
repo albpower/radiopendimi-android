@@ -9,14 +9,13 @@ margin:12px;
 	border-bottom: 1px solid #444;
 	border-radius:0 0 0 0;
 	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	display:inline;
+
 	font-family:Ubuntu;
-	font-size:15px;
+	/*font-size:15px;*/
 	font-weight: 200;
-	height:25px;
-    
+	width:100%;
+	height:auto;
+	margin:auto 4px;
     padding-top:5px;
     padding-bottom:5px;
     padding-left:15px;
@@ -37,42 +36,43 @@ margin:12px;
 	border-bottom:3px solid rgb(205, 29, 29);
 	border-radius:0 0 4px 4px;
 }
-/* backup
-.btn_control {    
+
+/* Butonat kontaktuese */
+.btn_contact {    
     color:#fff;
+    background: #323232;
 	text-shadow:none;
 	text-decoration:none;
 	border-bottom: 1px solid #444;
 	border-radius:0 0 0 0;
 	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	display:inline;
-	padding-top:5px;
+
 	font-family:Ubuntu;
-	font-size:15px;
+	/*font-size:15px;*/
 	font-weight: 200;
-	height:25px;
+	width:100%;
+	height:auto;
+	margin:auto 4px;
+    padding-top:5px;
+    padding-bottom:5px;
     padding-left:15px;
     padding-right: 15px;
     
 }
 
-.btn_control:hover {
+.btn_contact:hover {
     background:#323232;
 	color:#fff;
-	border-bottom:3px solid white;
+	border-bottom:3px solid rgb(205, 29, 29);
 	border-radius:0 0 4px 4px;
 }
 
-.btn_control:active {
+.btn_contact:active {
     background:#323232;
 	color:#fff;
-	border-bottom:3px solid white;
+	border-bottom:3px solid rgb(205, 29, 29);
 	border-radius:0 0 4px 4px;
 }
-*/
-
 
 /* Dergo Mesazh form styling */
 .feedback-input {
@@ -159,9 +159,9 @@ input:focus, textarea:focus {
 
 /* -- ibacor :)  -- */
 #ibacor_fb_content{
-	padding: 30%;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	margin:30px auto;
+	width:95%;
+	display:block;
 }
 
 div.ibacor_fb_box {
@@ -404,9 +404,9 @@ div#ibacor_fb_content div.profile_nm a{
 @media only screen and (min-width: 960px) and (max-width: 1045px) {
 
 	#ibacor_fb_content{
-		padding: 25%;
+	/*	padding: 25%;
 		padding-top: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 40px; */
 	}
 
 }
@@ -414,9 +414,9 @@ div#ibacor_fb_content div.profile_nm a{
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 	#ibacor_fb_content{
-		padding: 20%;
+	/*	padding: 20%;
 		padding-top: 15px;
-		padding-bottom: 30px;
+		padding-bottom: 30px;*/
 	}
 
 }
@@ -428,9 +428,9 @@ div#ibacor_fb_content div.profile_nm a{
 	}
 
 	#ibacor_fb_content{
-		padding: 15%;
+	/*	padding: 15%;
 		padding-top: 10px;
-		padding-bottom: 25px;
+		padding-bottom: 25px;*/
 	}
 
 }
@@ -442,7 +442,7 @@ div#ibacor_fb_content div.profile_nm a{
 	}
 
 	#ibacor_fb_content{
-		padding: 10px;
+		/*padding: 10px;*/
 	}
 
 }
