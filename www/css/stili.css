@@ -16,10 +16,7 @@ margin:12px;
 	width:100%;
 	height:auto;
 	margin:auto 4px;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left:15px;
-    padding-right: 15px;
+	padding:10px 15px;
     
 }
 
@@ -50,13 +47,11 @@ margin:12px;
 	font-family:Ubuntu;
 	/*font-size:15px;*/
 	font-weight: 200;
-	width:100%;
+	width:70%;
 	height:auto;
-	margin:auto 4px;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left:15px;
-    padding-right: 15px;
+	margin:auto auto;
+    padding:10px 15px;
+	display:block
     
 }
 
