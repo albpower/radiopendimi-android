@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.albpower.radiopendimii"
-        versionCode = "20700"
-        version   = "2.7.0">
+        versionCode = "20800"
+        version   = "2.8.0">
 
     <name>Radio Pendimi</name>
     <description>
