@@ -38,10 +38,11 @@
     <img src="images/pendimi-logo.png" style="width: 70%; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
     <!-- AUDIO PLAYER -->
     <p style="text-align:center; display:block">
-        <span>Kanali 1 - Jeni duke ndëgjuar:</span> <br/>  
-        <span><iframe src="http://radio-pendimi.com/kanal-1-status.php" style="border:none; height:55px; width:100%; margin: auto auto; display:block"></iframe>
+        <span>Kanali 1 - Jeni duke ndëgjuar:</span> <br/> 
+		<span id="cc_strinfo_song_kanali1" class="cc_streaminfo"></span>		
+       <!-- <span><iframe src="http://radio-pendimi.com/kanal-1-status.php" style="border:none; height:55px; width:100%; margin: auto auto; display:block"></iframe> -->
     </p>
-<audio src="http://radio-pendimi.com:8000/;$type=mp3" id="player"></audio>
+<audio src="http://217.172.180.29:8000/;$type=mp3" id="player"></audio>
 <div style="text-align:center; width: 100%; display: flex;"> <!-- Player controls start -->
     <span onclick="document.getElementById('player').play()" class="btn_control" style="margin-left:15px;"> PLAY</span>
     <span onclick="document.getElementById('player').pause()" class="btn_control"> STOP</span>
@@ -115,16 +116,18 @@
 <!-- content -->
 <div data-role="none">
      <img src="images/pendimi-logo.png" style="width: 70%; margin-right:auto; margin-left:auto;display: block;padding-top: 30px;"/>
-<audio src="http://radio-pendimi.com:8002/;$type=mp3" id="player-2"></audio>
+<audio src="http://217.172.180.29:8002/;$type=mp3" id="player-2"></audio>
+<p style="text-align:center; display:block">
+        <span>Kanali 2 - Jeni duke dëgjuar:</span> <br/>  
+		<span id="cc_strinfo_song_kanali2" class="cc_streaminfo"></span>
+        <!--<span><iframe src="http://radio-pendimi.com/kanal-2-status.php" style="border:none; height:60px; width:100%"></iframe> -->
+    </p>
 <div style="text-align:center; width: 100%; display: flex;">
     <span onclick="document.getElementById('player-2').play()" class="btn_control" style="margin-left:15px"> PLAY</span>
     <span onclick="document.getElementById('player-2').pause()" class="btn_control"> STOP</span>
     <!-- <span onclick="document.getElementById('player-2').muted=!document.getElementById('player-2').muted" class="btn_control" style="margin-right:15px"> MUTE/UNMUTE</span> -->
 </div>
-<p style="text-align:center; display:block">
-        <span>Kanali 2 - Jeni duke ndëgjuar:</span> <br/>  
-        <span><iframe src="http://radio-pendimi.com/kanal-2-status.php" style="border:none; height:60px; width:100%"></iframe>
-    </p>
+
 </div>
 <!-- footer -->
 <div data-role="footer" data-position="fixed" data-id="ap_footer">
@@ -211,6 +214,6 @@
     </script>
     <script src="js/jquery.ibacor-fb-streaming.min.js"></script>
     <script src="js/index.js"></script>
-    
+    <script language="javascript" type="text/javascript" src="http://217.172.180.29:2199/system/streaminfo.js"></script>
 </body>
 </html>
