@@ -48,13 +48,13 @@ function registerPushwooshAndroid() {
 	pushNotification.registerDevice(
 		function(token)
 		{
-			alert(token);
+			//alert(token);
 			//callback when pushwoosh is ready
 			onPushwooshAndroidInitialized(token);
 		},
 		function(status)
 		{
-			alert("failed to register: " +  status);
+			alert("Tentimi per regjistrimin e 'Njoftimeve' ka deshtuar: " +  status);
 		    console.warn(JSON.stringify(['failed to register ', status]));
 		}
 	);
@@ -117,7 +117,7 @@ function onPushwooshAndroidInitialized(pushToken)
 	//pushNotification.setTags({"MyTag":["hello", "world"]});
 	
 	//settings tags
-	pushNotification.setTags({deviceName:"hello", deviceId:10},
+	/*pushNotification.setTags({deviceName:"hello", deviceId:10},
 		function(status) {
 			console.warn('setTags success');
 		},
@@ -125,7 +125,7 @@ function onPushwooshAndroidInitialized(pushToken)
 			console.warn('setTags failed');
 		}
 	);
-
+*/
 	//Pushwoosh Android specific method that cares for the battery
 	//pushNotification.startGeoPushes();
 }

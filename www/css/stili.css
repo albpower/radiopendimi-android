@@ -1,74 +1,294 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 p {
 margin:12px;
 }
-.btn_control {    
+
+.logo{
+	width: 70%; 
+	margin-right:auto; 
+	margin-left:auto;
+	display: block;
+	padding-top: 5px;
+	
+}
+@-webkit-keyframes pulse_animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.08); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: 'pulse_animation';
+	-webkit-animation-duration: 2000ms;
+	-webkit-transform-origin:70% 70%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+
+#status-titulli{
+	text-align:center;
+	text-shadow:none; 
+	color:#fff; 
+	margin: 0px 20px; 
+	border-radius: 10px 10px 0px 0px;
+	font-family: Open Sans;
+	font-size:medium;
+	padding: 5px;
+}
+
+
+#player{
+    text-align: center;
+}
+
+
+
+
+
+/* =============================================================================================================================================== */
+/* Headeri */
+.header {
+    margin: 30px auto;
+    width:90%;
+    display:block;
+}
+.header div {
+    float:left;
+    width:33.33333333333333%;
+}
+.header .center {
+    text-align:center;
+}
+.header .center span {
     color:#fff;
-    background: #323232;
+    text-shadow: none;
+    font-family: Roboto;
+    font-size: medium;
+}
+.header .right {
+    text-align:right;
+}
+
+
+
+
+
+/* =============================================================================================================================================== */
+/* MENU */
+.titulli{
+    background-color:rgba(255,255,255,0.1);
+    font-size:12px;
+    font-family:Ubuntu;
+    font-weight:200;
+    text-transform:uppercase;
+    color:#fff;
+    text-shadow:none;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    display:block;
+    border-top:solid 1px rgba(255,255,255,0.05);
+    border-bottom:solid 1px rgba(255,255,255,0.05);
+}
+
+.menu{
+    padding-right:1em;
+    padding-left:1em;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+#menu a {
+	color:#fff;
 	text-shadow:none;
 	text-decoration:none;
-	border-bottom: 1px solid #444;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
 	border-radius:0 0 0 0;
 	text-align:center;
-
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding-top:5px;
 	font-family:Ubuntu;
-	/*font-size:15px;*/
+	font-size:15px;
 	font-weight: 200;
-	width:100%;
-	height:auto;
-	margin:auto 4px;
-	padding:10px 15px;
+	height:25px;
+}
+#menu a:hover{
+	background:rgba(255,255,255,0.5);
+	color:#fff;
+	border-bottom:3px solid white;
+	border-radius:0 0 4px 4px;
+}
+
+.Live {
+	padding-right:1em;
+	padding-left:1em;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+#Live a {
+	color:#fff;
+	text-shadow:none;
+	text-decoration:none;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	border-radius:0 0 0 0;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding-top:5px;
+	font-family:Ubuntu;
+	font-size:15px;
+	font-weight: 200;
+	height:25px;
+}
+#Live a:hover{
+	background:rgba(255,255,255,0.5);
+	color:#fff;
+	border-bottom:3px solid white;
+	border-radius:0 0 4px 4px;
+}
+
+.copyright{
+    background-color:rgba(255,255,255,0.1);
+    font-size:12px;
+    font-family:Ubuntu;
+    font-weight:200;
+    text-transform:uppercase;
+    color:#fff;
+    text-shadow:none;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    display:block;
+    border-top:solid 1px rgba(255,255,255,0.05);
+    border-bottom:solid 1px rgba(255,255,255,0.05);
+}
+
+
+
+
+/* =============================================================================================================================================== */
+/* Listat (Takvimi) */
+#takvimi-tabela{
+    font-family: Roboto;
+    font-weight: normal;
+    color:#fff;
+    text-shadow: none;
+}
+
+#takvimi-tabela li{
+    list-style-type:none;
+    padding: 5px 6px;
+}
+
+#takvimi-tabela li:nth-child(even)
+{background:rgba(255,255,255,0.1)}
+
+#takvimat{
+    width:100%;
+    display:block;
+}
+
+#takvimat div{
+    width:33.33333333333333%;
+    float:left;
+    text-align: center;
+    margin:15px auto;
+}
+
+/* =============================================================================================================================================== */
+/* Butonat (Menu,Refresh,btn-takvimat,btn-kanali-1,btn-kanali-2) */
+.butonat{
+    color:#fff;
+    background: rgba(255,243,194,0.1); 
+    padding: 12px; 
+    border-radius:10px;
+    text-shadow: none;
+    font-weight: normal;
     
 }
 
-.btn_control:hover {
-    background:#323232;
-	color:#fff;
-	border-bottom:3px solid rgb(205, 29, 29);
-	border-radius:0 0 4px 4px;
-}
-
-.btn_control:active {
-    background:#323232;
-	color:#fff;
-	border-bottom:3px solid rgb(205, 29, 29);
-	border-radius:0 0 4px 4px;
-}
-
-/* Butonat kontaktuese */
-.btn_contact {    
+.btn-takvimat{
     color:#fff;
-    background: #323232;
-	text-shadow:none;
-	text-decoration:none;
-	border-bottom: 1px solid #444;
-	border-radius:0 0 0 0;
-	text-align:center;
+    background: rgba(255,243,194,0.1); 
+    padding: 12px; 
+    border-radius:10px;
+    text-shadow: none;
+    font-weight: normal;
+    margin:6px 2px;
+    display: block;
+}
 
-	font-family:Ubuntu;
-	/*font-size:15px;*/
-	font-weight: 200;
-	width:70%;
-	height:auto;
-	margin:auto auto;
-    padding:10px 15px;
-	display:block
+
+
+
+/* =============================================================================================================================================== */
+/* Butonat (Play,Stop) */
+.btn_controli {    
+    color:#fff;
+	/*background:rgba(208,59,66,0.5);*/
+    border-radius:20px;
+	padding:24px 18px 18px;
     
 }
 
-.btn_contact:hover {
-    background:#323232;
+.btn_controli:hover {
+    /*background:rgba(208,59,66,0.8);*/
+    opacity: 0.5;
 	color:#fff;
-	border-bottom:3px solid rgb(205, 29, 29);
-	border-radius:0 0 4px 4px;
+	border-radius:20px;
+	
 }
 
-.btn_contact:active {
-    background:#323232;
+.btn_controli:active {
+    /*background:rgba(208,59,66,1);*/
+    opacity: 0.5;
 	color:#fff;
-	border-bottom:3px solid rgb(205, 29, 29);
-	border-radius:0 0 4px 4px;
+	border-radius:20px;
 }
 
+
+
+/* =============================================================================================================================================== */
+/* Transmetime player */
+.statusi-div{
+   	text-align:center;
+	text-shadow:none; 
+	color:#fff; 
+	margin: 0px 20px; 
+	border-radius: 10px 10px 0px 0px;
+	font-family: Open Sans;
+	font-size:medium;
+	/*padding: 5px;*/
+}
+
+.yt-player-wrapper{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top: 25px;
+    height:0;
+	margin:10px;
+}
+.yt-playeri{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+
+/* =============================================================================================================================================== */
 /* Dergo Mesazh form styling */
 .feedback-input {
 	color:#3c3c3c;
@@ -152,7 +372,9 @@ input:focus, textarea:focus {
 }
 
 
-/* -- ibacor :)  -- */
+
+
+/* =============================================================================================================================================== */
 #ibacor_fb_content{
 	margin:30px auto;
 	width:95%;
