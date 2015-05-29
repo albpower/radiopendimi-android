@@ -618,7 +618,6 @@ function onSuccess(data, status)
 /* =============================================================================================================================================== */
 //Transmetime direkte
 function broadcast(data){
-    console.log(data.items.length);
 	if (data.items.length != 0){
 			var id,title;
 		id = data.items[0].snippet.resourceId.videoId;
@@ -632,11 +631,22 @@ function broadcast(data){
 		$('#transmetime-list').html(output);
 	} else document.getElementById("yt-status").innerHTML = "Për momentin nuk ka transmetim direkt";
 }
-
+/*
+function getYoutube(){
+	$.get("https://www.googleapis.com/youtube/v3/playlistItems",{
+		part: 'snippet',
+		maxResults: 5,
+		playlistId: 'PLBm6IaQX_2oLhbcD8AvsKyZdfD2lSvpqb',
+		key: 'AIzaSyDhDZjburmzpaoH39Uj4dnU6X_GRLbCVW0'
+	}, function(data){
+		console.log(data);
+	}); //get function end
+}*/
 
 
 /* =============================================================================================================================================== */
 //Default transition
 function tranzicionet() { 
     $.mobile.defaultPageTransition = "none";
+	//getYoutube();
 }
