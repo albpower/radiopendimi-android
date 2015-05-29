@@ -37,11 +37,9 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-    <gap:plugin name="org.apache.cordova.media" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
-
+   
     <!-- Social Sharing & Pushwoosh notifications -->
+    <gap:plugin name="nl.kingsquare.background-audio" />
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" source="plugins.cordova.io" />
 	<gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
 
