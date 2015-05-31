@@ -287,6 +287,16 @@ margin:12px;
     height:100%;
 }
 
+#yt-status{
+    text-align: center;
+    display: block;
+    padding: 8px;
+    font-size: medium;
+    background-color: #6d4253;
+    margin: 12px auto;
+}
+
+
 
 /* =============================================================================================================================================== */
 /* Dergo Mesazh form styling */
