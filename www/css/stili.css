@@ -390,6 +390,8 @@ div.ibacor_fb_box {
 div.ibacor_status {
 	padding: 15px;
 	border-bottom: 1px solid #ced0d6;
+    color:#333;
+    text-shadow: none;
 }
 
 div.ibacor_komen {
@@ -511,7 +513,8 @@ div#ibacor_fb_content div.bcr_sare img {
 }
 
 div#ibacor_fb_content a div.bcr_sare {
-	color: #000;
+	color: #333;
+    font-weight:normal;
 }
 
 div#ibacor_fb_content span.likebls{
