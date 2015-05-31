@@ -646,6 +646,8 @@ function getYoutube(){
 
 /* =============================================================================================================================================== */
 //Default transition
+$(document).on('mobileinit',tranzicionet);
+
 function tranzicionet() { 
     $.mobile.defaultPageTransition = "none";
 	//getYoutube();
