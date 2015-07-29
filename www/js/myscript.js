@@ -11,7 +11,7 @@ var attachFastClick = Origami.fastclick;
 attachFastClick(document.body);
 
 
-/* Takvimi Shkup,Tirane,Prishtine  */
+/* Takvimi Shkup,Tirane,Prishtine  
 function takvimiSK() {
     var data= {
 		"Shkup":[
@@ -587,7 +587,7 @@ function takvimiTR() {
 		outputTR+= '</ul>';
 		document.getElementById("takvimi-tabela").innerHTML = outputTR;
 }
-
+*/
 
 
 
