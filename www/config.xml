@@ -39,7 +39,7 @@
     <!-- Core plugins -->
    
     <!-- Social Sharing & Pushwoosh notifications -->
-    <gap:plugin name="nl.kingsquare.background-audio" />
+    <!--<gap:plugin name="nl.kingsquare.background-audio" /> for iOS only -->
     <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 
