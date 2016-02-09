@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.albpower.radiopendimii"
-        versionCode = "30020"
-        version   = "3.0.2">
+        versionCode = "30030"
+        version   = "3.0.3">
 
     <name>Radio Pendimi</name>
     <description>
@@ -17,7 +17,7 @@
     </author>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-5.2.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -40,8 +40,8 @@
    
     <!-- Social Sharing & Pushwoosh notifications -->
     <gap:plugin name="nl.kingsquare.background-audio" />
-    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" source="plugins.cordova.io" />
-	<gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
+    <gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
