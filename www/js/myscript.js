@@ -13,40 +13,57 @@ attachFastClick(document.body);
 
 /* =============================================================================================================================================== */
 //DergoMesazh
-function onSuccess(data, status)
-        {
-            data = $.trim(data);
-            $("#notification").text(data);
-        }
+// function onSuccess(data, status)
+// {
+// 	data = $.trim(data);
+//   $("#notification").text(data);
+// 	$('#name').val('');
+// 	$('#comment').val('');
+// 	setTimeout(function(){
+// 		$('#notification').text("");
+// 	},2000);
+// 	console.log("resett");
+//  }
   
-        function onError(data, status)
-        {
-            // handle an error
-        }        
+// function onError(data, status)
+// {
+//   // handle an error
+// }        
   
-        $(document).ready(function() {
-            $("#submit").click(function(){
-  
-                var formData = $("#callAjaxForm").serialize();
-  
-                $.ajax({
-                    type: "POST",
-                    url: "http://radio-pendimi.com/mobile/v2/send.php",
-                    crossDomain:true,
-                    cache: false,
-                    data: formData,
-                    success: onSuccess,
-                    error: onError
-                });
-				return false;
-            });
-			$("#reset").click(function() {
-				$('#callAjaxForm').trigger("reset");
-				$('#notification').text("");
-			});
-        }); //end
+//  $("#submit").click(function(){
+// 								var emri = 	$('#name').val();
+// 								var mesazhi = $('#comment').val();
 
+// 								console.log(emri);
+// 								console.log(mesazhi);
 
+// 								if(emri == '' && mesazhi == ''){
+// 									alert('empty');
+// 								}
+// 							// 	if ( emri != '' && mesazhi != ''){
+// 							// 		var formData = $("#callAjaxForm").serialize();
+// 							// 		$.ajax({
+// 							// 				type: "POST",
+// 							// 				url: "http://radio-pendimi.com/mobile/v2/send.php",
+// 							// 				crossDomain:true,
+// 							// 				cache: false,
+// 							// 				data: formData,
+// 							// 				success: onSuccess,
+// 							// 				error: onError
+// 							// 		});
+// 							//  } else {
+// 							// 	 $("#notification").text('Ju lutemi plotësoni fushat e nevojshme dhe provoni përsëri!');
+// 							//  }
+// 						}); //end #submit   
+			
+// 			$("#reset").click(function() {
+// 				$('#callAjaxForm').trigger("reset");
+// 				$('#notification').text("");
+// 			});
+
+// $(document).ready(function() {
+
+// }); //end DocReady
 
 /* =============================================================================================================================================== */
 //Transmetime direkte
@@ -76,3 +93,47 @@ function getYoutube(){
 	}); //get function end
 }*/
 
+/*=================================================
+								ANGULAR APPLICATION
+==================================================*/
+var app = angular.module('APP',[]);
+
+app.controller("dergoMesazhCtrl",function($scope,$timeout,$http){
+	$scope.notification = "";
+	$scope.errorInput = false;
+
+	$scope.dergoMesazhin = function(){
+		if ($scope.emri != undefined && $scope.mesazhi != undefined){
+
+			var config = {
+                headers : {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                }
+            }
+    
+    $http.post('http://radio-pendimi.com/mobile/send-angular.php',{
+        'emri': $scope.emri,
+        'mesazhi': $scope.mesazhi,
+				'sistemiOperativ': "Android APP"
+    },config).then(function(resp){
+				$scope.notification = resp.data.results;
+
+        $timeout(function(){
+            $scope.notification = "";
+        },3000);
+        
+        $scope.emri = "";
+        $scope.mesazhi = "";
+		});
+
+		} else {
+			 $scope.notification = "Ju lutemi plotësoni fushat e nevojshme dhe provoni përsëri!";
+			 $scope.errorInput = true;
+			  $timeout(function(){
+            $scope.notification = "";
+						$scope.errorInput = false;
+        },3000);
+		}
+	}
+
+})

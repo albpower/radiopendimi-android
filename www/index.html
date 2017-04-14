@@ -18,6 +18,7 @@
     
     <!-- JS LIDHJET  -->
 <script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script src="js/myscript.js"></script>
@@ -78,7 +79,7 @@
 			<!-- <div id="cc_recenttracks_kanali1" class="cc_recenttracks_list">Loading ...</div><br> -->
 	</div>
 	<div id="player" >
-		<audio src="http://85.93.88.146:8006/stream" id="player-1" preload="metadata"></audio>
+		<audio src="http://85.93.88.146:8004/;$type=mp3" id="player-1" preload="metadata"></audio>
 		<div style="margin:15px auto 35px"> <!-- Player controls start -->
 			<span onclick="document.getElementById('player-1').play()" class="btn_controli"> <i class="fa fa-play fa-3x"></i></span>
 			<span onclick="document.getElementById('player-1').pause()" class="btn_controli"> <i class="fa fa-stop fa-3x"></i></span>
@@ -151,7 +152,7 @@
 			<!-- <div id="cc_recenttracks_kanali1" class="cc_recenttracks_list">Loading ...</div><br> -->
 	</div>
 	<div id="player" >
-		<audio src="http://85.93.88.146:8008/stream" id="player-2" preload="metadata"></audio>
+		<audio src="http://85.93.88.146:8008/;$type=mp3" id="player-2" preload="metadata"></audio>
 		<div style="margin:15px auto 35px"> <!-- Player controls start -->
 			<span onclick="document.getElementById('player-2').play()" class="btn_controli"> <i class="fa fa-play fa-3x"></i></span>
 			<span onclick="document.getElementById('player-2').pause()" class="btn_controli"> <i class="fa fa-stop fa-3x"></i></span>
@@ -261,7 +262,7 @@
     
 
 <!-- Dergo Mesazh -->
-<div data-role="page" id="dergomesazh" data-theme="b" style="min-height:100%;/*background: radial-gradient(circle, #9a4d61, #4b3a48);*/">
+<div data-role="page" id="dergomesazh" data-theme="b" style="min-height:100%;" ng-app="APP" ng-controller="dergoMesazhCtrl">
 
     <!-- MENU Panel -->
   <div id="Menu5" data-role="panel" data-display="push"  class="paneli">
@@ -295,21 +296,24 @@
             <span>Dërgo Mesazh</span>
         </div>
      </div><br><br>
-    <form class="form" id="callAjaxForm">
+
+    <form class="form" > <!-- id="callAjaxForm" -->
 	<p class="name">
-        <input name="emri" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Emri" id="name" data-role="none"  />
+        <input id="name" ng-model="emri" name="emri" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"  placeholder="Emri"  data-role="none" ng-class="{'wrongInput':errorInput}"  />
       </p>
      
       <p class="text">
-        <textarea name="comment" class="validate[required,length[6,30]] feedback-input" id="comment" placeholder="Mesazhi" data-role="none" ></textarea>
+        <textarea id="comment" ng-model="mesazhi" name="comment" class="validate[required,length[6,30]] feedback-input" placeholder="Mesazhi" data-role="none"  ng-class="{'wrongInput':errorInput}"></textarea>
       </p>
       
       
       <div class="submit" style="margin: 0px 12px;">
-        <button id="submit" type="submit" >DËRGO</button>
+        <button id="submit" ng-click="dergoMesazhin()" >DËRGO</button>
 		<button id="reset" type="reset" >PASTRO FUSHAT</button>
 	  </div>
-	   <h3 id="notification" align="center" style="font-color:green;"></h3>
+	   <h3 id="notification" align="center">
+           {{notification}}
+       </h3>
     </form>
 </div>
 <!-- footer -->

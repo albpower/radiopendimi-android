@@ -50,7 +50,9 @@ margin:12px;
     text-align: center;
 }
 
-
+.wrongInput{
+	border:solid 1px red !important;
+}
 
 
 
